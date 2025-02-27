@@ -32,11 +32,7 @@ L'objectif principal du jeu est de trouver et vaincre tous les dragons présents
    ```bash
    cd Labyrinthe
    ```
-3. Installez les dépendances requises :
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Exécutez le jeu :
+3. Exécutez le jeu :
    ```bash
    python main.py
    ```
