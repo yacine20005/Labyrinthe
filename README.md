@@ -1,8 +1,8 @@
-# Labyrinth
+# Maze
 
 ## Game Description
 
-Labyrinth is a game where you play as an adventurer exploring a dungeon filled with dragons. Your goal is to find and defeat the dragons while navigating through a maze of rotating rooms.
+Maze is a game where you play as an adventurer exploring a dungeon filled with dragons. Your goal is to find and defeat the dragons while navigating through a maze of rotating rooms.
 
 ## Game Objective
 
@@ -26,11 +26,11 @@ The main objective of the game is to find and defeat all the dragons present in 
 
 1. Clone the GitHub repository:
    ```bash
-   git clone https://github.com/yacine20005/Labyrinth.git
+   git clone https://github.com/yacine20005/Maze.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Labyrinth
+   cd Maze
    ```
 3. Run the game:
    ```bash
