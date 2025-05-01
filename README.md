@@ -1,71 +1,78 @@
-# Labyrinthe
+# Labyrinth
 
-## Description du jeu
+## Game Description
 
-Labyrinthe est un jeu où vous incarnez un aventurier explorant un donjon rempli de dragons. Votre objectif est de trouver et vaincre les dragons tout en naviguant à travers un labyrinthe de salles rotatives.
+Labyrinth is a game where you play as an adventurer exploring a dungeon filled with dragons. Your goal is to find and defeat the dragons while navigating through a maze of rotating rooms.
 
-## Objectif du jeu
+## Game Objective
 
-L'objectif principal du jeu est de trouver et vaincre tous les dragons présents dans le donjon. Pour ce faire, vous devez naviguer à travers le labyrinthe, en utilisant les salles rotatives pour créer des chemins et accéder aux dragons.
+The main objective of the game is to find and defeat all the dragons present in the dungeon. To do this, you must navigate through the maze, using the rotating rooms to create paths and access the dragons.
 
-## Comment jouer
+## How to Play
 
-1. Lancez le jeu en suivant les instructions d'installation et d'exécution ci-dessous.
-2. Utilisez les touches de direction pour déplacer votre aventurier à travers le labyrinthe.
-3. Utilisez la barre d'espace pour faire pivoter les salles et créer de nouveaux chemins.
-4. Trouvez et vainquez tous les dragons pour gagner la partie.
+1. Launch the game by following the installation and execution instructions below.
+2. Use the arrow keys to move your adventurer through the maze.
+3. Use the spacebar to rotate the rooms and create new paths.
+4. Find and defeat all the dragons to win the game.
 
-## Installation et exécution
+## Installation and Execution
 
-### Prérequis
+### Prerequisites
 
 - Python 3.x
-- Bibliothèque `fltk`
+- `fltk` library
 
 ### Instructions
 
-1. Clonez le dépôt GitHub :
+1. Clone the GitHub repository:
    ```bash
-   git clone https://github.com/yacine20005/Labyrinthe.git
+   git clone https://github.com/yacine20005/Labyrinth.git
    ```
-2. Accédez au répertoire du projet :
+2. Navigate to the project directory:
    ```bash
-   cd Labyrinthe
+   cd Labyrinth
    ```
-3. Exécutez le jeu :
+3. Run the game:
    ```bash
    python main.py
    ```
 
-## Contrôles et mécaniques du jeu
+## Game Controls and Mechanics
 
-- Utilisez les touches de direction pour déplacer votre aventurier.
-- Appuyez sur la barre d'espace pour faire pivoter les salles.
-- Les salles rotatives peuvent être utilisées pour créer de nouveaux chemins et accéder aux dragons.
+- Use the arrow keys to move your adventurer.
+- Press the spacebar to rotate the rooms.
+- Rotating rooms can be used to create new paths and access the dragons.
 
-## Structure du jeu
+### Detailed Explanation of Game Mechanics
 
-Le jeu est composé de plusieurs éléments principaux :
+- **Movement**: Use the arrow keys to move your adventurer one tile at a time in the maze.
+- **Room Rotation**: Press the spacebar to rotate the room your adventurer is currently in. This can open up new paths or close existing ones.
+- **Dragon Encounter**: When you move into a tile with a dragon, you will engage in a battle. The outcome of the battle depends on your adventurer's level and the dragon's level.
+- **Leveling Up**: Defeating dragons will increase your adventurer's level, making it easier to defeat stronger dragons.
 
-- **Menu principal** : Permet de lancer une nouvelle partie ou d'accéder aux options.
-- **Menu des options** : Permet de choisir la carte et les paramètres de jeu.
-- **Plateau de jeu** : Représenté sous forme de grille avec différentes tuiles représentant les salles du donjon.
-- **Aventurier** : Personnage contrôlé par le joueur, représenté par une image sur le plateau de jeu.
-- **Dragons** : Ennemis à vaincre, représentés par des images sur le plateau de jeu.
+## Game Structure
 
-## Cartes du jeu
+The game is composed of several main elements:
 
-Le jeu inclut plusieurs cartes stockées dans le répertoire `ressources/maps`. Chaque carte est représentée par un fichier texte contenant la disposition des salles et les positions des dragons.
+- **Main Menu**: Allows you to start a new game or access the options.
+- **Options Menu**: Allows you to choose the map and game settings.
+- **Game Board**: Represented as a grid with different tiles representing the rooms of the dungeon.
+- **Adventurer**: The character controlled by the player, represented by an image on the game board.
+- **Dragons**: Enemies to defeat, represented by images on the game board.
 
-### Ajouter une nouvelle carte
+## Game Maps
 
-Pour ajouter une nouvelle carte, suivez ces étapes :
+The game includes several maps stored in the `resources/maps` directory. Each map is represented by a text file containing the layout of the rooms and the positions of the dragons.
 
-1. Créez un nouveau fichier texte dans le répertoire `ressources/maps`.
-2. Définissez la disposition des salles en utilisant les caractères appropriés (voir `ressources/tiles.txt` pour les symboles disponibles).
-3. Ajoutez les positions de l'aventurier et des dragons à la fin du fichier, en utilisant le format suivant :
+### Adding a New Map
+
+To add a new map, follow these steps:
+
+1. Create a new text file in the `resources/maps` directory.
+2. Define the layout of the rooms using the appropriate characters (see `resources/tiles.txt` for available symbols).
+3. Add the positions of the adventurer and dragons at the end of the file, using the following format:
    ```
    A x y
-   D x y niveau
+   D x y level
    ```
-   Où `x` et `y` sont les coordonnées de la position, et `niveau` est le niveau du dragon.
+   Where `x` and `y` are the coordinates of the position, and `level` is the level of the dragon.
